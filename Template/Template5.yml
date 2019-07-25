@@ -191,12 +191,11 @@ Resources:
     Type: "AWS::CloudFront::Distribution"
     Properties:
       DistributionConfig:
-        Origins: [
-            DomainName: !GetAtt coolReactBucket.DomainName
-            Id: !Ref coolReactBucket
-            S3OriginConfig: 
-              OriginAccessIdentity: ''
-        ]
+        Origins: 
+            - DomainName: !GetAtt coolReactBucket.DomainName
+            - Id: !Ref coolReactBucket
+            - S3OriginConfig: 
+               - OriginAccessIdentity: ''
         DefaultRootObject: index.html
         Enabled: true
         DefaultCacheBehavior:
