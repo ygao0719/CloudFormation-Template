@@ -194,8 +194,9 @@ Resources:
         Origins:
             DomainName: !GetAtt coolReactBucket.DomainName
             Id: !Ref coolReactBucket
-            S3OriginConfig:
+            S3OriginConfig: {
               OriginAccessIdentity: ''
+            }
         DefaultRootObject: index.html
         Enabled: true
         DefaultCacheBehavior:
