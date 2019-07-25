@@ -161,7 +161,7 @@ Resources:
         BuildSpec: !Sub |
           version: 0.1
           phases:
-            prebuild:
+            pre_build:
               commands:
                 - echo Installing source NPM dependencies...
                 - npm install
