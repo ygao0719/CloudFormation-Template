@@ -25,6 +25,8 @@ error: instance of Fn::GetAtt references undefined resource codeBuildRoll
     - make sure the whole file use the same bucket name
   
 ## Template 5
+1. Add --recursive to s3
+2. Rename bucket to all lowercase
  
 ## Template 6
 1. format error: 2020-09-09 is not a supported value forAWSTemplateFormatVersion
